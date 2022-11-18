@@ -9,13 +9,13 @@ background-color: #ffcc11;
 	justify-content: space-around;
 }
 
-h1, h2
+h1, h2, h3, .toptext
 {
 	text-align: center;
 	font-size: 2em;
 }
 
-p
+p, b
 {
 	font-size: 1.5em;
 }
@@ -56,12 +56,12 @@ nav
 	border: 3px solid black;
 }
 
-nav a, nav a:visited
+a, a:visited
 {
 	color: black;
 }
 
-nav a:hover
+a:hover
 {
 	color: white;
 }
