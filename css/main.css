@@ -17,7 +17,7 @@ font-family: Arial, Helvetica, sans-serif;
 h1, h2, h3, .toptext
 {
 	text-align: center;
-	font-size: 2em;
+	font-size: 1.5em;
 }
 
 p, b
@@ -99,14 +99,13 @@ a:hover
 
 i
 {
-	margin: auto, 0;
 	width: 100%;
 }
 
 .styrelse img
 {
-	width: 100%;
-	height: auto;
+	height: 315px;
+	width: auto;
 	aspect-ratio: 1/1;
 	margin-bottom: 5%;
 	border-radius: 0%;
