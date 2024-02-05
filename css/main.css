@@ -115,3 +115,9 @@ i
 {
 	align-content: center;
 }
+
+summary:hover
+{
+	cursor: pointer;
+}
+
