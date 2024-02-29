@@ -70,6 +70,7 @@ p {
 }
 
 article {
+	min-height: 40vh;
 	width: 700px;
 	padding: 2% 10%;
 	align-content: center;
@@ -282,21 +283,32 @@ nav{
 
 /*Mobile experience*/
 @media (pointer:none), (pointer:coarse) {
-	nav {
-		height: 10vw;
+	
+.DORK {
+	grid-area: 2 / 1 / 1 / 4;
+	}
+
+	nav, footer {
+		height: 20vw;
+		align-items: center;
 	}
 
 	.nav-links {
 		grid-area: 1 / 5 / 2 / 9;
 		display: flex;
 		justify-content: space-between;
+		align-items: center;
 	}
 
-	.nav-links a {
+	.nav-links a, footer span {
 		font-size: 40px;
 	}
 
 	.DORK {
-		font-size: 70px;
+		font-size: 85px;
 	}	
+
+	article {
+		min-height: 60vh;
+	}
 }
