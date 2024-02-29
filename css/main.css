@@ -19,10 +19,13 @@
 }
 
 /*FÄRGER*/
-html, body {
-background-color: #992323;
-padding: 0;
-margin: 0;
+* {
+	padding: 0;
+	margin: 0;
+}
+
+html {
+	background-color: #992323;
 }
 
 header, article, footer, nav { /*Själva elementen med text*/
@@ -63,7 +66,6 @@ p, b {
 
 article {
 	width: 700px;
-	margin: auto;
 	padding: 2% 10%;
 	align-content: center;
 }
@@ -76,16 +78,16 @@ header {
 }
 
 header, article, footer, nav {
-	margin: 20PX AUTO;
+	margin: 20px auto;
 	border-radius: 5px;
 	box-shadow: 5px 5px 5px rgb(0 0 0 / 35%);
 }
 
 nav, footer {
-	width: 100vw;
+	width: 100%;
 	display: flex;
 	justify-content: space-around;
-	margin: auto;
+	margin: 0 auto;
 	font-size: 1.5em;
 }
 
@@ -106,7 +108,7 @@ footer {
 	border-radius: 0px;
 	border: 0px;
 	margin: 0;
-	padding: 0.8%;
+	padding: 0.8% 0;
 }
 
 footer span {
