@@ -1,69 +1,59 @@
-html
-{
+/*FÄRGER*/
+html {
 background-color: #992323;
 }
 
-*
-{
+header, article, footer, nav { /*Själva elementen med text*/
+	background-color: #ffcc11;
+}
+
+a, a:visited { /*LÄNKAR*/
+	color: black;
+}
+
+a:hover { 
+	color: red;
+}
+
+
+* { /*Gäller samtliga element*/
 font-family: Arial, Helvetica, sans-serif;
 }
 
-.imgdiv
-{
+.imgdiv {
 	display: flex;
 	justify-content: space-around;
 }
 
-h1, h2, h3, .toptext
-{
+h1, h2, h3, .toptext {
 	text-align: center;
 	font-size: 1.5em;
 }
 
-p, b
-{
+p, b {
 	font-size: 1.5em;
 }
 
-article
-{
+article {
 	width: 700px;
 	margin: auto;
 	padding: 2% 10%;
 	align-content: center;
 }
 
-header img
-{
-	width:  400px;
-	height: auto;
-	margin: 0 40%;
-}
-header
-{
+
+header {
 	padding: 2% 10%;
 	width: 700px;
 	margin: auto;
 }
 
 header, article, footer, nav {
-	/*border: 3px solid #992323;*/
-	background-color: #ffcc11;
 	margin: 20PX AUTO;
 	border-radius: 10px;
 }
-img
-{
-	border-radius: 5%;
-}
 
-.butt
-{
-	width: 100%;
-}
-
-nav, footer
-{
+nav, footer {
 	width: 700px;
 	display: flex;
 	justify-content: space-around;
@@ -72,24 +62,12 @@ nav, footer
 	font-size: 2em;
 }
 
-a, a:visited
-{
-	color: black;
-}
-
-a:hover
-{
-	color: red;
-}
-
-.styrelsecontainer
-{
+.styrelsecontainer {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 }
 
-.styrelse
-{
+.styrelse {
 	border: 3px solid black;
 	width: 90%;
 	display: grid;
@@ -97,19 +75,24 @@ a:hover
 	margin: 5%;
 }
 
-.styrelse h3, p, b, span, i
-{
+.styrelse h3, p, b, span, i {
 	text-align: center;
 	margin: 0;
 }
 
-i
-{
+i {
 	width: 100%;
 }
 
-.styrelse img
-{
+img { /*Gäller samtliga bilder*/
+	border-radius: 5%;
+}
+
+.butt {
+	width: 100%;
+}
+
+.styrelse img {
 	height: 315px;
 	width: auto;
 	aspect-ratio: 1/1;
@@ -117,16 +100,22 @@ i
 	border-radius: 0%;
 }
 
-.intro
-{
+header img {
+	width:  400px;
+	height: auto;
+	margin: 0 40%;
+}
+
+
+.intro {
 	align-content: center;
 }
 
-summary:hover
-{
+summary:hover {
 	cursor: pointer;
 }
 
-.lore_img{
+.lore_img {
 	width: 100%;
 }
+
