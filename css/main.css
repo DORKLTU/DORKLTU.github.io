@@ -38,13 +38,13 @@ header, article, footer, nav { /*Själva elementen med text*/
 	border: 3px solid #ffcc11;
 }
 
-.nav-links a, .nav-links a:visited { /*LÄNKAR*/
+.nav-links a, .nav-links a:visited, article a, article a:visited { /*LÄNKAR*/
 	font-family: HelveticaNeueBold;
 	color: black;
 	text-decoration: none;
 }
 
-.nav-links a:hover { 
+.nav-links a:hover, article a:hover { 
 	color: red;
 }
 
