@@ -213,3 +213,19 @@ article a {
 	font-family: HelveticaNeueLight;
 	align-content: center;
 }
+
+/*GRIDS*/
+nav {
+	display: grid;
+	grid-template-columns: repeat(7, 1fr);
+}
+
+nav div {
+	grid-area: 1 / 5 / 2 / 7;
+	display: flex;
+	justify-content: space-around;
+}
+
+.DORK {
+	grid-area: 1 / 1 / 2 / 4;
+}
