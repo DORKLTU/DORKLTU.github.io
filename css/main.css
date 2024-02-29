@@ -38,13 +38,13 @@ header, article, footer, nav { /*Själva elementen med text*/
 	border: 3px solid #ffcc11;
 }
 
-a, a:visited { /*LÄNKAR*/
+.nav-links a, .nav-links a:visited { /*LÄNKAR*/
 	font-family: HelveticaNeueBold;
 	color: black;
 	text-decoration: none;
 }
 
-a:hover { 
+.nav-links a:hover { 
 	color: red;
 }
 
@@ -107,7 +107,7 @@ nav {
 	box-shadow: 0px 5px 10px rgb(0 0 0 / 35%);
 }
 
-nav a {
+.nav-links a {
 	padding: 22px 0;
 }
 
@@ -190,10 +190,6 @@ summary:hover {
 	width: 100%;
 }
 
-.underlined {
-	text-decoration: underline;
-}
-
 marquee {
 	font-family: HelveticaNeueMedium;
 	color: #992323;
@@ -209,26 +205,51 @@ marquee {
 	font-size: 50px;
 }
 
+.DORK a {
+	padding: 0;
+	margin: 0;
+	color: #992323;
+}
+
 article a {
 	font-family: HelveticaNeueLight;
 	align-content: center;
 }
 
 /*GRIDS*/
-nav {
-	display: grid;
-	grid-template-columns: repeat(7, 1fr);
+nav{
+	display: flex;
+	justify-content: center;
 }
 
-nav div {
-	grid-area: 1 / 5 / 2 / 7;
+.grid-container {
+	width: 1170px;	
+	display: grid;
+	grid-template-columns: repeat(9	, 1fr);
+}
+
+.nav-links {
+	grid-area: 1 / 6 / 2 / 9;
 	display: flex;
 	justify-content: space-around;
 }
 
-.DORK {
-	grid-area: 1 / 1 / 2 / 4;
+.nav-links a {
+	font-size: 20px;
 }
+
+.DORK {
+	grid-area: 1 / 1 / 2 / 5;
+	display: flex;
+	justify-content: center;
+	text-decoration: none;
+}
+
+.DORK a {
+	padding: 0;
+	color:#992323;
+}
+
 
 .link-grid {
 	display: grid;
@@ -253,4 +274,29 @@ nav div {
 .link-grid img:hover {
 	filter: drop-shadow(1px 1px 1px rgb(0, 0, 0, 40%));
 	cursor: pointer;
+}
+
+.nav-links a.underlined {
+	text-decoration: underline;
+}
+
+/*Mobile experience*/
+@media (pointer:none), (pointer:coarse) {
+	nav {
+		height: 10vw;
+	}
+
+	.nav-links {
+		grid-area: 1 / 5 / 2 / 9;
+		display: flex;
+		justify-content: space-between;
+	}
+
+	.nav-links a {
+		font-size: 40px;
+	}
+
+	.DORK {
+		font-size: 70px;
+	}	
 }
