@@ -121,16 +121,23 @@ footer span {
 }
 
 .styrelse {
-	border: 3px solid black;
+	border: 3px solid #992323;
+	background-color: #ffcc11;
 	width: 90%;
 	display: grid;
 	justify-content: center;
 	margin: 5%;
+	box-shadow: 3px 3px 5px rgb(0 0 0 / 35%);
+	
 }
 
-.styrelse h3, p, b, span, i {
+.styrelse h3, .styrelse img, p, b, span, i {
 	text-align: center;
 	margin: 0;
+}
+
+.styrelse img {
+	border-bottom: 3px solid #992323;
 }
 
 i {
