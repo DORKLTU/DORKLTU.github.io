@@ -229,3 +229,28 @@ nav div {
 .DORK {
 	grid-area: 1 / 1 / 2 / 4;
 }
+
+.link-grid {
+	display: grid;
+	grid-template-columns: repeat(5, 1fr);
+	align-content: center;
+}
+
+.link-grid a {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%; /* Ensure the link takes up the entire grid cell */
+}
+
+.link-grid img {
+	height: 120px;
+	width: auto;
+	border: none;
+	margin: auto;
+}
+
+.link-grid img:hover {
+	filter: drop-shadow(1px 1px 1px rgb(0, 0, 0, 40%));
+	cursor: pointer;
+}
