@@ -1,10 +1,13 @@
 /*FÄRGER*/
-html {
+html, body {
 background-color: #992323;
+padding: 0;
+margin: 0;
 }
 
 header, article, footer, nav { /*Själva elementen med text*/
-	background-color: #ffcc11;
+	background-color: #f9f2db;
+	border: 3px solid #ffcc11;
 }
 
 a, a:visited { /*LÄNKAR*/
@@ -54,12 +57,27 @@ header, article, footer, nav {
 }
 
 nav, footer {
-	width: 700px;
+	width: 100vw;
 	display: flex;
 	justify-content: space-around;
 	margin: auto;
-	padding: 2% 10%;
-	font-size: 2em;
+	font-size: 1.5em;
+}
+
+nav {
+	background-color: #ffcc11;
+	border-radius: 0px;
+	border: 0px;
+	margin: 0;
+	
+}
+
+nav a {
+	padding: 20px 0;
+}
+
+footer {
+	width: 700px;
 }
 
 .styrelsecontainer {
