@@ -98,6 +98,7 @@ nav, footer {
 	justify-content: space-around;
 	margin: 0 auto;
 	font-size: 1.5em;
+	
 }
 
 nav {
@@ -121,7 +122,7 @@ footer {
 }
 
 footer span {
-	font-family: HelveticaNeueMedium;
+	font-family: LemonMilkBold;
 }
 
 .styrelsecontainer {
