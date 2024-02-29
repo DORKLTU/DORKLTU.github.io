@@ -1,3 +1,23 @@
+@font-face {
+	font-family: LemonMilk;
+	src: url("../fonts/LEMONMILK-Regular.otf");
+}
+
+@font-face {
+	font-family: HelveticaNeueMedium;
+	src: url("../fonts/HelveticaNeue-Medium.otf");
+}
+
+@font-face {
+	font-family: HelveticaNeueBold;
+	src: url("../fonts/HelveticaNeue-Bold.otf");
+}
+
+@font-face {
+	font-family: HelveticaNeueLight;
+	src: url("../fonts/HelveticaNeue-Light.otf");
+}
+
 /*FÄRGER*/
 html, body {
 background-color: #992323;
@@ -11,7 +31,9 @@ header, article, footer, nav { /*Själva elementen med text*/
 }
 
 a, a:visited { /*LÄNKAR*/
+	font-family: HelveticaNeueBold;
 	color: black;
+	text-decoration: none;
 }
 
 a:hover { 
@@ -20,12 +42,14 @@ a:hover {
 
 
 * { /*Gäller samtliga element*/
-font-family: Arial, Helvetica, sans-serif;
+	font-family: HelveticaNeueLight;
+	font-size: 1em;
 }
 
 .imgdiv {
 	display: flex;
 	justify-content: space-around;
+	
 }
 
 h1, h2, h3, .toptext {
@@ -53,7 +77,8 @@ header {
 
 header, article, footer, nav {
 	margin: 20PX AUTO;
-	border-radius: 10px;
+	border-radius: 5px;
+	box-shadow: 5px 5px 5px rgb(0 0 0 / 35%);
 }
 
 nav, footer {
@@ -69,15 +94,23 @@ nav {
 	border-radius: 0px;
 	border: 0px;
 	margin: 0;
-	
+	box-shadow: 0px 5px 10px rgb(0 0 0 / 35%);
 }
 
 nav a {
-	padding: 20px 0;
+	padding: 22px 0;
 }
 
 footer {
-	width: 700px;
+	background-color: #ffcc11;
+	border-radius: 0px;
+	border: 0px;
+	margin: 0;
+	padding: 0.8%;
+}
+
+footer span {
+	font-family: HelveticaNeueMedium;
 }
 
 .styrelsecontainer {
@@ -103,7 +136,8 @@ i {
 }
 
 img { /*Gäller samtliga bilder*/
-	border-radius: 5%;
+	border-radius: 3%;
+	margin-top: 40px;
 }
 
 .butt {
@@ -137,3 +171,6 @@ summary:hover {
 	width: 100%;
 }
 
+.underlined {
+	text-decoration: underline;
+}
