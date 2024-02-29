@@ -4,6 +4,11 @@
 }
 
 @font-face {
+	font-family: LemonMilkBold;
+	src: url("../fonts/LEMONMILK-Bold.otf");
+}
+
+@font-face {
 	font-family: HelveticaNeueMedium;
 	src: url("../fonts/HelveticaNeue-Medium.otf");
 }
@@ -60,7 +65,7 @@ h1, h2, h3, .toptext {
 	font-size: 1.5em;
 }
 
-p, b {
+p {
 	font-size: 1.5em;
 }
 
@@ -70,6 +75,9 @@ article {
 	align-content: center;
 }
 
+article img {
+	border: 3px solid #992323;
+}
 
 header {
 	padding: 2% 10%;
@@ -147,6 +155,7 @@ i {
 img { /*Gäller samtliga bilder*/
 	border-radius: 3%;
 	margin-top: 40px;
+	
 }
 
 .butt {
@@ -161,16 +170,11 @@ img { /*Gäller samtliga bilder*/
 	border-radius: 0%;
 }
 
-header img {
-	width:  400px;
-	height: auto;
-	margin: 0 40%;
-}
 
 header {
-	background-image: url(../img/Dork\ bakgrund\ header\ smaller.png);
+	background-image: url(../img/Dork\ bakgrund\ header\ smaller\ but\ bigger.png);
 	background-size: 100%;
-	height: 440px;
+	height: 490px;
 	background-size: fill;
 }
 
@@ -195,4 +199,17 @@ marquee {
 	color: #992323;
 	text-shadow: 1px 1px 1px rgb(0 0 0 / 35%);
 	font-size: 20px;
+}
+
+.DORK {
+	font-family: LemonMilkBold;
+	color: #992323;
+	-webkit-text-stroke: 2px black;
+	margin-top: 2px;
+	font-size: 50px;
+}
+
+article a {
+	font-family: HelveticaNeueLight;
+	align-content: center;
 }
