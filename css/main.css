@@ -1,6 +1,6 @@
 html
 {
-background-color: #ffcc11;
+background-color: #992323;
 }
 
 *
@@ -31,7 +31,6 @@ article
 	margin: auto;
 	padding: 2% 10%;
 	align-content: center;
-	border: 3px solid black;
 }
 
 header img
@@ -43,8 +42,16 @@ header img
 header
 {
 	padding: 2% 10%;
+	width: 700px;
+	margin: auto;
 }
 
+header, article, footer, nav {
+	/*border: 3px solid #992323;*/
+	background-color: #ffcc11;
+	margin: 20PX AUTO;
+	border-radius: 10px;
+}
 img
 {
 	border-radius: 5%;
@@ -55,7 +62,7 @@ img
 	width: 100%;
 }
 
-nav
+nav, footer
 {
 	width: 700px;
 	display: flex;
@@ -63,7 +70,6 @@ nav
 	margin: auto;
 	padding: 2% 10%;
 	font-size: 2em;
-	border: 3px solid black;
 }
 
 a, a:visited
