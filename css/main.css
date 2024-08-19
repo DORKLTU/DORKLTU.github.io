@@ -313,3 +313,44 @@ nav{
 		min-height: 60vh;
 	}
 }
+
+.bookshelf {
+   outline: 3px green solid;
+    gap: 100px;
+    background-color: #654321;
+}
+
+.bookshelf .row {
+   display: grid;
+   grid-template-columns: repeat(5, 1fr);
+   margin: 20px;
+   height: 100px;
+   outline: 3px #000 solid;
+   padding: 1%;
+   background-color: #554332;
+}
+
+
+.bookshelf {
+    border-top:5px solid lightgrey;
+    border-bottom:5px solid grey;
+    border-left:5px solid lightgrey;
+    border-right:5px solid grey;
+}
+
+.bookshelf .game {
+    margin: 10px;
+}
+
+.game:hover {
+  filter: drop-shadow(5px 5px 15px white) 
+          drop-shadow(-5px -5px 15px white);
+
+}
+
+.game img {
+    height: 100px;
+    margin: 0;
+    border: unset;
+}
+
