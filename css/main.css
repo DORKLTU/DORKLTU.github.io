@@ -339,7 +339,7 @@ nav{
     border-right:5px solid #654321;
 }
 
-.bookshelf .game {
+.bookshelf .game, .bookshelf .decor {
     margin: 10px;
     filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.5));
 }
@@ -350,7 +350,7 @@ nav{
 
 }
 
-.game img {
+.game img, .decor img {
     height: 95px;
     margin: 0;
     border: unset;
@@ -362,7 +362,7 @@ nav{
 	height: 90px;
  }
 
-.top-of-shelf .game img {
+.top-of-shelf .decor img {
 	height: 200px;
 }
 
@@ -390,11 +390,11 @@ border: unset;
  }
 
  .blink_me {
- animation: blinker 1s linear infinite;
- }
+     animation: blinker 1s linear infinite;
+     }
 
- @keyframes blinker {
- 45%, 55% {
-	 color:red;
- }
+     @keyframes blinker {
+     45%, 55% {
+         color:red;
+     }
  }
