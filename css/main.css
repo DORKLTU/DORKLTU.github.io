@@ -97,7 +97,7 @@ nav, footer {
 	display: flex;
 	justify-content: space-around;
 	margin: 0 auto;
-	font-size: 1.5em;
+	font-size: 1em;
 	
 }
 
@@ -157,8 +157,8 @@ i {
 img { /*Gäller samtliga bilder*/
 	border-radius: 3%;
 	margin-top: 40px;
-	
 }
+
 
 .butt {
 	width: 100%;
@@ -174,11 +174,30 @@ img { /*Gäller samtliga bilder*/
 
 
 header {
-	background-image: url(../img/Dork\ bakgrund\ header\ smaller\ but\ bigger.png);
-	background-size: 100%;
-	height: 490px;
-	background-size: fill;
+    background-image: url("../img/bullens.jpg");
+    height: 40vh;
+    max-height: 300px;
+    background-size: cover; /* Make background responsive */
+    text-align: center;
+    display: flex; /* Use flexbox */
+    justify-content: center; /* Horizontally center the logo */
+    align-items: center; /* Vertically center the logo */
+    position: relative;
 }
+
+
+.logo {
+    width: 90%; /* Set width relative to parent container */
+    max-width: 250px; /* Limit maximum size for large screens */
+    height: auto; /* Maintain aspect ratio */
+    margin: 0; /* Remove margin */
+}
+
+.logo:hover {
+    width: 95%;
+    max-width: 260px;
+}
+
 
 .intro {
 	align-content: center;
@@ -301,6 +320,14 @@ nav{
 		align-items: center;
 	}
 
+    .nav.links a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+
+
 	.nav-links a, footer span {
 		font-size: 40px;
 	}
@@ -347,8 +374,49 @@ nav{
 .bookshelf .game:hover {
   filter: drop-shadow(5px 5px 15px white) 
           drop-shadow(-5px -5px 15px white);
-
 }
+
+#ratSpeech {
+  position: relative;
+  display: inline-block;
+  margin-left: 16px;
+  padding: 16px;
+  border: 1px solid #000000;
+  border-radius: 12px;
+  background-color: #ffffff;
+  text-align: left;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #000000;
+}
+
+#ratSpeech::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  border-style: solid;
+  border-width: 0 16px 16px 0;
+  border-color: transparent #000000 transparent transparent;
+  translate: -100% -50%;
+  transform: skew(0, -10deg);
+  transform-origin: right;
+}
+
+#ratSpeech::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  border-style: solid;
+  border-width: 0 13.6px 13.6px 0;
+  border-color: transparent #ffffff transparent transparent;
+  translate: -100% calc(-50% - 0.2px);
+  transform: skew(0, -10deg);
+  transform-origin: right;
+}
+
 
 .game img, .decor img {
     height: 95px;
@@ -398,3 +466,103 @@ border: unset;
          color:red;
      }
  }
+
+@media (max-width: 900px) {
+    body {
+       /* background-color: lightblue; */
+    }
+
+    header, footer, nav {
+        width: 100%;
+        margin: auto;
+        padding: 0;
+    }
+    
+    header {
+        margin: 10px auto;
+        width: 90%;
+        padding: 2%;
+    }
+
+    article {
+        width: 90%;
+        padding: 2%;
+    }
+
+    .nav-links a, .nav-links a:visited, article a, article a:visited {
+        font-size: 3vw;
+        padding: 3vw;
+        margin-right: 2vw;
+    }
+
+    .DORK {
+        font-size: 10vw;
+    }
+
+    .styrelsecontainer {
+        width: 60vw;
+    }
+
+    .styrelse {
+        width: 40vw;
+        margin: 2vw;
+    }
+
+    .styrelse img { 
+        height: 40vw;
+        width: auto;
+        aspect-ratio: 1/1;
+    }
+
+    .bookshelf {
+        gap: 10px;
+        background-color: #654321;
+        box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5);
+    }
+
+    .bookshelf .row {
+       display: grid;
+       grid-template-columns: repeat(5, 1fr);
+       margin: 20px;
+    }
+
+
+    .bookshelf {
+        border-top:5px solid #342719;
+        border-bottom:5px solid #654321;
+        border-left:5px solid #342719;
+        border-right:5px solid #654321;
+    }
+
+    .row .game img, .row .decor img {
+        margin: 0;
+        width: 9vw;
+        max-height: 100%;
+        border: unset;
+        aspect-ratio: auto;
+        margin: 0;
+        padding: 0;
+    }
+
+    .decor img a, .game img a {
+        padding: 0;
+    }
+
+
+    .bookshelf .game, .bookshelf .decor {
+        filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.5));
+    }
+
+    .bookshelf .game:hover {
+      filter: drop-shadow(5px 5px 15px white) 
+              drop-shadow(-5px -5px 15px white);
+    }
+
+    .link-grid a {
+        padding: 0px;
+    }
+
+    .link-grid img {
+       height: 15vw; 
+    }
+} 
